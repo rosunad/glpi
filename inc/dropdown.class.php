@@ -77,7 +77,7 @@ class Dropdown {
     *    - url                  : url of the ajax php code which should return the json data to show in
     *                                       the dropdown
     *
-	*    - allow_anonymous		: allow get data even if user is not logged
+    *    - allow_anonymous      : allow get data even if user is not logged
     * @return boolean : false if error and random id if OK
    **/
    static function show($itemtype, $options=array()) {
@@ -112,7 +112,7 @@ class Dropdown {
       $params['addicon']              = true;
       $params['specific_tags']        = array();
       $params['url']                  = $CFG_GLPI['root_doc']."/ajax/getDropdownValue.php" ;
-	  $params['allow_anonymous']	  = false;
+      $params['allow_anonymous']      = false;
 
 
       if (is_array($options) && count($options)) {
